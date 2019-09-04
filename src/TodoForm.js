@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import * as actions from "./redux/actions";
 import { connect } from "react-redux";
 
-const TodoForm = ({value, saveTodo, updateValue}) => (
+const TodoForm = ({value, saveTodo, update_value}) => (
     <form 
         onSubmit={event => {
         event.preventDefault();
@@ -16,7 +16,7 @@ const TodoForm = ({value, saveTodo, updateValue}) => (
             margin="normal" 
             value={value} 
             //
-            onChange={ e => updateValue(e.target.value)}
+            onChange={ e => update_value(e.target.value)}
          />
     </form>
 );

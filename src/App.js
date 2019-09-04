@@ -17,7 +17,7 @@ const App = () => {
         </Grid>
         <Grid container justify="center">
           <Grid item md={8}>
-            {/* <TodoList /> */}
+            <TodoList />
           </Grid>
         </Grid>
       </React.Fragment>
